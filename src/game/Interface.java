@@ -140,9 +140,6 @@ class Interface {
         savePanel.add(new Box.Filler(new Dimension(0, 0), new Dimension(0, 0),
                 new Dimension(0, 0)), BorderLayout.EAST);
 
-        ImageIcon imageIcon = new ImageIcon(getClass().getResource("2048.png"));
-        mainFrame.setIconImage(imageIcon.getImage());
-
         mainFrame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         mainFrame.addWindowListener(new WindowAdapter() {
             @Override
