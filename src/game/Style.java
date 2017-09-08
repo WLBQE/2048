@@ -8,47 +8,47 @@ import java.awt.Font;
  *
  * @author 王力博
  */
-public final class Style {
+final class Style {
 
 	/**
 	 * 游戏实现的模式数目
 	 */
-	protected static final int styleNum = 3;
+	static final int styleNum = 3;
 
 	/**
 	 * 默认字体
 	 */
-	protected static final Font defaultFont = new Font(Font.DIALOG, Font.PLAIN,
+	static final Font defaultFont = new Font(Font.DIALOG, Font.PLAIN,
 			24);
 
 	/**
 	 * 中文字体
 	 */
-	protected static final Font chineseFont = new Font("宋体", Font.BOLD, 24);
+	static final Font chineseFont = new Font("宋体", Font.BOLD, 24);
 
 	/**
 	 * 小字体
 	 */
-	protected static final Font smallFont = new Font(Font.DIALOG, Font.PLAIN,
+	static final Font smallFont = new Font(Font.DIALOG, Font.PLAIN,
 			20);
 
 	/**
 	 * 默认格子样式
 	 */
-	protected static final TileStyle defaultStyle[] = {
+	static final TileStyle defaultStyle[] = {
 			new TileStyle("", Color.black, Color.white, 0),
-			new TileStyle("2", Color.black, Color.white, 2),
-			new TileStyle("4", Color.black, Color.white, 4),
-			new TileStyle("8", Color.black, Color.white, 8),
-			new TileStyle("16", Color.blue, Color.white, 16),
-			new TileStyle("32", Color.blue, Color.white, 32),
-			new TileStyle("64", Color.blue, Color.white, 64),
-			new TileStyle("128", Color.blue, Color.white, 128),
-			new TileStyle("256", Color.magenta, Color.yellow, 256),
-			new TileStyle("512", Color.magenta, Color.yellow, 512),
-			new TileStyle("1024", Color.magenta, Color.yellow, 1024),
-			new TileStyle("2048", Color.red, Color.green, 2048),
-			new TileStyle("4096", Color.red, Color.green, 4096),
+			new TileStyle("2", Color.black, new Color(0xffffe0), 2),
+			new TileStyle("4", Color.black, new Color(0xfffacd), 4),
+			new TileStyle("8", Color.black, new Color(0xfff68f), 8),
+			new TileStyle("16", Color.black, new Color(0xffec8b), 16),
+			new TileStyle("32", Color.black, new Color(0xffd700), 32),
+			new TileStyle("64", Color.black, new Color(0xffc125), 64),
+			new TileStyle("128", Color.black, new Color(0xffa500), 128),
+			new TileStyle("256", Color.black, new Color(0xff8c00), 256),
+			new TileStyle("512", Color.black, new Color(0xff7f24), 512),
+			new TileStyle("1024", Color.black, new Color(0xff7f00), 1024),
+			new TileStyle("2048", Color.white, Color.red, 2048),
+			new TileStyle("4096", Color.white, Color.red, 4096),
 			new TileStyle("8192", Color.white, Color.black, 8192),
 			new TileStyle("16384", Color.white, Color.black, 16384),
 			new TileStyle("32768", Color.white, Color.black, 32768),
@@ -58,46 +58,46 @@ public final class Style {
 	/**
 	 * 中国朝代格子样式
 	 */
-	protected static final TileStyle dynastyStyle[] = {
+	static final TileStyle dynastyStyle[] = {
 			new TileStyle("", Color.black, Color.white, 0),
-			new TileStyle("夏", Color.black, Color.white, 2),
-			new TileStyle("商", Color.black, Color.white, 4),
-			new TileStyle("周", Color.black, Color.white, 8),
-			new TileStyle("汉", Color.blue, Color.white, 16),
-			new TileStyle("唐", Color.blue, Color.white, 32),
-			new TileStyle("宋", Color.blue, Color.white, 64),
-			new TileStyle("元", Color.blue, Color.white, 128),
-			new TileStyle("明", Color.magenta, Color.yellow, 256),
-			new TileStyle("清", Color.magenta, Color.yellow, 512),
+			new TileStyle("夏", Color.black, new Color(0xffffe0), 2),
+			new TileStyle("商", Color.black, new Color(0xfffacd), 4),
+			new TileStyle("周", Color.black, new Color(0xfff68f), 8),
+			new TileStyle("汉", Color.black, new Color(0xffec8b), 16),
+			new TileStyle("唐", Color.black, new Color(0xffd700), 32),
+			new TileStyle("宋", Color.black, new Color(0xffc125), 64),
+			new TileStyle("元", Color.black, new Color(0xffa500), 128),
+			new TileStyle("明", Color.black, new Color(0xff8c00), 256),
+			new TileStyle("清", Color.black, new Color(0xff7f24), 512),
 			new TileStyle("民国", Color.white, Color.blue, 1024),
-			new TileStyle("天朝", Color.yellow, Color.red, 2048),
-			new TileStyle("民主国", Color.black, Color.green, 4096),
-			new TileStyle("自由邦", Color.black, Color.green, 8192),
-			new TileStyle("米利坚", Color.red, Color.blue, 16384),
-			new TileStyle("理想国", Color.white, Color.black, 32768),
-			new TileStyle("永生国", Color.white, Color.black, 65536),
-			new TileStyle("不灭国", Color.white, Color.black, 131072), };
+			new TileStyle("天朝", Color.white, Color.red, 2048),
+			new TileStyle("初级", Color.white, Color.red, 4096),
+			new TileStyle("中级", Color.white, Color.red, 8192),
+			new TileStyle("高级", Color.white, Color.red, 16384),
+			new TileStyle("共产", Color.white, Color.red, 32768),
+			new TileStyle("民主", Color.white, Color.blue, 65536),
+			new TileStyle("理想", Color.white, Color.black, 131072), };
 
 	/**
 	 * 5×5模式格子样式
 	 */
-	protected static final TileStyle fiveStyle[] = {
+	static final TileStyle fiveStyle[] = {
 			new TileStyle("", Color.black, Color.white, 0),
-			new TileStyle("2", Color.black, Color.white, 2),
-			new TileStyle("4", Color.black, Color.white, 4),
-			new TileStyle("8", Color.black, Color.white, 8),
-			new TileStyle("16", Color.black, Color.white, 16),
-			new TileStyle("32", Color.blue, Color.white, 32),
-			new TileStyle("64", Color.blue, Color.white, 64),
-			new TileStyle("128", Color.blue, Color.white, 128),
-			new TileStyle("256", Color.blue, Color.white, 256),
-			new TileStyle("512", Color.blue, Color.white, 512),
-			new TileStyle("1024", Color.magenta, Color.yellow, 1024),
-			new TileStyle("2048", Color.magenta, Color.yellow, 2048),
-			new TileStyle("4096", Color.magenta, Color.yellow, 4096),
-			new TileStyle("8192", Color.magenta, Color.yellow, 8192),
-			new TileStyle("16384", Color.red, Color.green, 16384),
-			new TileStyle("32768", Color.red, Color.green, 32768),
+			new TileStyle("2", Color.black, new Color(0xffffe0), 2),
+			new TileStyle("4", Color.black, new Color(0xfffacd), 4),
+			new TileStyle("8", Color.black, new Color(0xfff68f), 8),
+			new TileStyle("16", Color.black, new Color(0xffec8b), 16),
+			new TileStyle("32", Color.black, new Color(0xffd700), 32),
+			new TileStyle("64", Color.black, new Color(0xffc125), 64),
+			new TileStyle("128", Color.black, new Color(0xffa500), 128),
+			new TileStyle("256", Color.black, new Color(0xff8c00), 256),
+			new TileStyle("512", Color.black, new Color(0xff7f24), 512),
+			new TileStyle("1024", Color.black, new Color(0xff7f00), 1024),
+			new TileStyle("2048", Color.black, new Color(0xff4500), 2048),
+			new TileStyle("4096", Color.black, new Color(0xff4040), 4096),
+			new TileStyle("8192", Color.black, new Color(0xff3030), 8192),
+			new TileStyle("16384", Color.white, Color.red, 16384),
+			new TileStyle("32768", Color.white, Color.red, 32768),
 			new TileStyle("65536", Color.white, Color.black, 65536),
 			new TileStyle("131072", Color.white, Color.black, 131072),
 			new TileStyle("262144", Color.white, Color.black, 262144),
